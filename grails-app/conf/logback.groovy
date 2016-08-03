@@ -9,7 +9,7 @@ appender('STDOUT', ConsoleAppender) {
 }
 
 //root(ERROR, ['STDOUT'])
-root(DEBUG, ['STDOUT'])
+root(INFO, ['STDOUT'])
 
 def targetDir = BuildSettings.TARGET_DIR
 if (Environment.isDevelopmentMode() && targetDir) {
